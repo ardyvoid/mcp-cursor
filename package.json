@@ -1,0 +1,27 @@
+{
+  "name": "mcp-cursor",
+  "version": "1.0.0",
+  "description": "An MCP server for sending prompts to Cursor IDE",
+  "bin": {
+    "weather": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && cp -r src/scripts build/ && chmod 755 build/index.js"
+  },
+  "files": [
+    "build",
+    "build/scripts"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.8.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}
